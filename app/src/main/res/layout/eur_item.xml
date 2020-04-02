@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        tools:text="EUR"
+        android:id="@+id/eur_tv_code"
+        style="@style/TextViewCurrencyStyle"/>
+
+    <LinearLayout
+        android:layout_below="@id/eur_tv_code"
+        style="@style/LayoutStyle">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/eur_tv_name"
+            android:layout_weight="50"
+            tools:text="Euro"
+            style="@style/TextViewMainStyle"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/europe"
+            android:layout_weight="50"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

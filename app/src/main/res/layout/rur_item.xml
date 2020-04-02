@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/rur_tv_code"
+        style="@style/TextViewCurrencyStyle"
+        tools:text="RUR" />
+
+    <LinearLayout
+        style="@style/LayoutStyle"
+        android:layout_below="@id/rur_tv_code">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/russia"
+            android:layout_weight="10"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rur_tv_name"
+            android:layout_weight="40"
+            tools:text="Рубль"
+            style="@style/TextViewMainStyle"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rur_tv_amount"
+            android:layout_weight="50"
+            tools:text="1000,00"
+            android:gravity="end"
+            style="@style/TextViewMainStyle"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
